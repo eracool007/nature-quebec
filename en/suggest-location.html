@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4592bcc5fd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/styles.css" media="screen">
+    <link rel="stylesheet" href="../css/impression.css" media="print">
+    <title>Suggest a Parc</title>
+</head>
+<body>
+
+    <header id="main-header">
+        <section class="main-content">
+            <div class="row1">
+                <h1 class="cache-ecran">Nature Quebec - Discover Quebec City`s beautiful parks</h1>
+    
+                <div class="column25">
+                    <img class="logo-blanc" src="../images/interface/logo-blanc.png" alt="Nature Quebec Logo">
+                </div>
+                <div class="header-reseaux column75">
+                    <ul>
+                        
+                        <li><a href="http://www.facebook.com/quebecnature" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="http://www.twitter.com/quebecnature" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="http://www.instagram.com/quebecnature" target="_blank"><i class="fab fa-instagram reseaux-icon"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    <section class="accroche">    
+        <div>
+            <h3>Nature in the Heart of the City!</h3>
+        </div>
+    </section> 
+    <section class="nav-bar">   
+        <h2 class="cache-ecran">Navigation Bar</h2>
+        <nav id="main-nav" class="nav-bar-link main-content">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="presentation.html">Presentation</a></li>
+                <li><a href="suggest-location.html">Suggest a Park</a></li>
+                <li><a  href="#" id="alt-linguistique" lang="fr" title="Version en français" data-location-id="suggerer-lieu">Français</a></li>
+            </ul>
+        </nav>
+    </section>
+    </header>
+
+
+
+    <main>
+        <div class="main-content">
+            <h4 class="left-align">Suggest a park</h4>
+            <h3 class="left-align presentation-accroche">Help us share the most beautiful parks of Quebec City by filling out and sending us the following form!</h3>
+            
+            <form action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
+                <fieldset id="fieldset-form">
+                    
+                    <p>
+                        <label for="titre">Title</label>
+                        <input type="text" name="titre" id="titre" size="72" required>
+                    </p>
+                    <p>
+                        <label for="accroche">Hook</label>
+                    <textarea name="accroche" id="accroche" cols="72" rows="3" required></textarea>
+                    </p>
+
+                    <p>
+                        <label for="description">Description</label>
+                    <textarea name="description" id="description" cols="72" rows="10" required></textarea>
+                    </p>
+
+                    <p>
+                        <label for="image">Image Choice</label>
+                        <input type="file" name="image" id="image" accept="image/*" capture="environment">
+                    </p>
+
+                    <p>
+                        <label for="clip-sonore">Audio File Choice</label>
+                        <input type="file" name="clip-sonore" id="clip-sonore" accept="audio/*" capture="environment">
+                    </p>
+
+                    <p>
+                        <span class="span-label">Language</span>
+                        <label class="label-radio" for="langue">English</label>
+                        <input type="radio" name="langue" id="langue" value="English" checked>
+                        <label class="label-radio" for="langue2">French</label>
+                        <input type="radio" name="langue" id="langue2" value="French" >
+                    </p>
+
+                    <p>
+                        <label for="courriel">Email</label>
+                        <input type="email" name="courriel" size="72" id="courriel" required>
+                    </p>
+
+                    <div class="center">
+                        <p>
+                            <input type="submit" value="Send"> <input type="reset" value="Erase">
+                        </p>
+                    </div>
+
+                </fieldset>
+            
+            </form>
+        </div>
+    </main>
+    
+    <footer id="footer-main">
+        <nav id="footer-nav" class="nav-bar-link main-content">
+            <ul>
+                <li><a class="footer-link" href="index.html">Home</a></li>
+                <li><a class="footer-link" href="presentation.html">Presentation</a></li>
+                <li><a class="footer-link" href="suggest-location.html">Suggest a Park</a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <img class="logo-sans-bordure" src="../images/interface/logo-blanc-zero.png" alt="Nature Quebec Logo">
+            <p class="copyright">&#169; All Rights Reserved 2021, Nature Quebec</p>
+            <p class="copyright">Top banner photo by <a class="copyright-link" href="https://unsplash.com/@kazuend?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">kazuend</a> on <a class="copyright-link" href="https://unsplash.com/s/photos/river?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a></p>
+        </div>
+    </footer>
+    <script>
+        window.onload= function(){
+           initLanguage();
+           decorateText();
+        }
+    </script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

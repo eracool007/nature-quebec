@@ -1,0 +1,84 @@
+@media print {
+    body{
+        width:100%;
+        margin:0 auto;
+        padding:0;
+        margin-top: 0;
+    }
+
+    *{
+        color: #000000;
+        text-decoration: none;
+    }
+    .header-reseaux,
+    nav,
+    .cache-ecran,
+    #splash-main, 
+    .parc-audio{
+        display: none;
+    }
+    .afficher{
+        display:block;
+    }
+    
+    img{
+        max-width: 300px;
+    }
+
+    .logo-blanc,
+    .splash-logo-blanc img,
+    .logo-sans-bordure{
+        filter: invert(1);
+        max-width: 150px;
+        
+    }
+    h1, h2, h3, h4{
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+/*------------formulaire--------------*/
+
+    fieldset{
+        border: none;
+        margin: 0 auto;
+        text-align: left;
+        margin-bottom: 2rem;
+        margin-top: 1.5rem;
+    }
+    label,
+    .span-label{
+        display:block;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    label.required::after{
+        content: " *";
+        color: red;
+        font-weight: bolder;
+    }
+
+    fieldset p{
+        padding: 0.2rem;
+        color: #000;
+    }
+    input[type=text], textarea, [type=email]{
+        width:100%;
+        font-size: 1rem;
+    }
+
+    input[type=file]{
+        width: 100%;
+    }
+    .label-radio {
+        display: inline-block;
+        padding: 0 0.5rem 0 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color:var(--gris-moyen);
+    }
+
+    input[type=submit], [type=reset] {
+        padding: 12px 20px;
+        margin: 0.5rem .1rem;
+        border-radius: 30px;
+    }
+}

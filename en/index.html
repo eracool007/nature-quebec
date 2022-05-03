@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4592bcc5fd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/styles.css" media="screen">
+    <link rel="stylesheet" href="../css/impression.css" media="print">
+    <link rel="stylesheet" href="../node_modules/mediaelement/build/mediaelementplayer.min.css">
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/jquery-cycle2/build/jquery.cycle2.min.js"></script>
+    <script src="../node_modules/mediaelement/build/mediaelement-and-player.min.js"></script>
+
+    <title>Nature Quebec</title>
+</head>
+<body>
+
+    <header id="main-header">
+        <section class="main-content">
+        <div class="row1">
+            <h1 class="cache-ecran">Nature Quebec - Discover Quebec City`s beautiful parks</h1>
+
+            <div class="column25">
+                <img class="logo-blanc" src="../images/interface/logo-blanc.png" alt="Nature Quebec Logo">
+            </div>
+            <div class="header-reseaux column75">
+                <ul>
+                    
+                    <li><a href="http://www.facebook.com/quebecnature" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="http://www.twitter.com/quebecnature" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="http://www.instagram.com/quebecnature" target="_blank"><i class="fab fa-instagram reseaux-icon"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="accroche">    
+        <div>
+            <h3>Nature in the Heart of the City!</h3>
+        </div>
+    </section> 
+    <section class="nav-bar">   
+        <h2 class="cache-ecran">Navigation Bar</h2>
+        <nav id="main-nav" class="nav-bar-link main-content">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="presentation.html">Presentation</a></li>
+                <li><a href="suggest-location.html">Suggest a Park</a></li>
+                <li><a  href="#" id="alt-linguistique" lang="fr" title="Version en français" data-location-id="index">Français</a></li>
+            </ul>
+        </nav>
+    </section>
+    </header>
+
+    <main id="section-parcs">
+        <div class="background-div"></div>
+        <div id="section-parcs-content" class="main-content">
+            <div class="left-align"><h4>Parks to Discover!</h4></div>
+            <div class="slideshow-container">
+                <div class="parc-container">
+                    <section id="montagne-des-roches" class="parc">
+                    
+
+                        <div class="parc-titre left-align">
+                            <h2>Montagne des Roches Park</h2>
+                        </div>
+
+                        <figure>
+                        <img class="section-parcs-image"  src="../images/contenu/montagne-des-roches.png" alt="Montagne des Roches Park">
+                        <figcaption class="credit-photo">Photo by: Caroline Fontaine 2021</figcaption>
+                        </figure>
+
+                        <div class="parc-accroche">
+                            <h3 class="left-align">Nature at the Heart of People's Lives</h3>
+                        </div>
+                    
+                        <div id="texte-montagne-roches" class="descriptif cache-ecran">
+                            
+                            <p class="parc-description left-align">With an area of 19.4 acres and 3 kilometers of hiking trails, Montagne-des-Roches Park is one of the largest parks of Charlesbourg. In addition, this haven of peace is also distinguished by its magnificent and rich forest cover including strong vegetation with many maple trees, beeches, conifers and several varieties of hardy plants and flowers. </p>
+
+                            <p class="parc-description left-align">
+                            Offering a children's play area, picnic tables for Sunday afternoons with the family, and a small stream to relax and observe wildlife, there is no doubt that this park will appeal to all members of your family! Note that if you watch carefully, you might even find a place to observe Quebec City in all its splendor!
+                            </p>
+                        </div>
+                    
+                        <div class="left-align spacer">
+                            <a id="texte-montagne-roches-btn" class="description-lien" onclick="showText('texte-montagne-roches', 'en')" href="javascript:void(0);">Show Details...</a> 
+                        </div>
+
+                        <div class="parc-audio">
+                            <audio id="clip-montagne-des-roches" controls>
+                                <source src="../audio/montagne-des-roches-en.mp3" type="audio/mpeg">    
+                            </audio>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="parc-container"> 
+
+                    <section id="du-moulin" class="parc">
+                        <div class="parc-titre left-align">
+                            <h2>Des Moulins Park</h2>
+                        </div>
+                        <figure>
+                        <img class="section-parcs-image" src="../images/contenu/moulin.png" alt="Du Moulin Park">
+                        <figcaption class="credit-photo">Photo by: Caroline Fontaine 2021</figcaption>
+                        </figure>
+
+                        <div class="parc-accroche">
+                            <h3 class="left-align">The Best Kept Treasure in Town!</h3>
+                        </div>
+        
+                        <div id="texte-moulins" class="descriptif cache-ecran">
+                            <p class="parc-description left-align">
+                            Des Moulins Park is one of Quebec City real jewel! Partly located on the former site of the <em>Jardin zoologique du Québec</em>, it is crossed by the Du Berger River, which is home to many ducks and birds all year round. Some archaeological remains dating between the middle of the 18th century and the 20th century are still present in a few places for you to discover.
+                            </p>
+                            <p class="parc-description left-align">
+                            This superb park is divided into two sections: A forest section with many rustic trails and bird feeders, and an urban park section offering paved paths, marquees with picnic tables, a small children playground, benches, green spaces at will, and many floral arrangements. In winter, visitors can practice Nordic walking or snowshoeing. This oasis of peace is a real treat for nature lovers!
+                            </p>
+                        </div>
+                    
+                        <div class="left-align spacer">
+                            <a id="texte-moulins-btn" class="description-lien" onclick="showText('texte-moulins', 'en')" href="javascript:void(0);">Show Details...</a> 
+                        </div>    
+            
+                        <div class="parc-audio">
+                            <audio id="clip-moulin" controls>
+                                <source src="../audio/moulin-en.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </section>
+                </div>
+                    
+                <div class="parc-container"> 
+                    <section id="riviere-st-charles" class="parc">
+                        <div class="parc-titre left-align">
+                            <h2>Rivière St-Charles Linear Park</h2>
+                        </div>
+                        
+                        <figure>
+                        <img class="section-parcs-image"  src="../images/contenu/riviere-st-charles.png" alt="Rivière St-Charles Linear Park">
+                        <figcaption class="credit-photo">Photo by: Caroline Fontaine 2021</figcaption>
+                        </figure>
+        
+                        <div class="parc-accroche">
+                            <h3 class="left-align">The Ultimate Nature Experience Between City and Countryside!</h3>
+                        </div>    
+                        
+                        <div id="texte-lineaire" class="descriptif cache-ecran">
+
+                            <p class="parc-description left-align">
+                            The Rivière St-Charles Linear Park and its trails crisscross the banks of the river on a distance of over 32 km, and offers 13 enchanting sectors! Starting in the Old Port of Quebec City, directly in the city, it runs up to St-Charles Lake in the heart of nature.        
+                            </p>
+                            <p class="parc-description left-align">
+                            Throughout his journey, the hiker will have the opportunity to discover a diversity of forest landscapes, the park’s biodiversity and natural habitats, each of which are more spectacular than the other. Depending on the various access points, no one is left behind and various activities are offered: footpaths, cycle paths, snowshoes and even cross-country skiing. Whether you are there for the sight of bucolic falls, swamps filled with life, a majestic canyon, an aboriginal village filled with history, or for the discovery of many historic places, Rivière St-Charles Linear Park trails are simply exceptional.        
+                            </p>
+                        </div>
+    
+                        <div class="left-align spacer">
+                            <a id="texte-lineaire-btn" class="description-lien" onclick="showText('texte-lineaire', 'en')" href="javascript:void(0);">Show Details...</a> 
+                        </div>    
+
+                        <div class="parc-audio">
+                            <audio id="clip-riviere-st-charles" controls>
+                                <source src="../audio/riviere-st-charles-en.mp3" type="audio/mpeg"> 
+                            </audio>
+                        </div>
+                    </section>
+                </div>
+                <!-- Boutons next & previous -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer-main">
+        <nav id="footer-nav" class="nav-bar-link main-content">
+            <ul>
+                <li><a class="footer-link" href="index.html">Home</a></li>
+                <li><a class="footer-link" href="presentation.html">Presentation</a></li>
+                <li><a class="footer-link" href="suggest-location.html">Suggest a Park</a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <img class="logo-sans-bordure" src="../images/interface/logo-blanc-zero.png" alt="Nature Quebec Logo">
+            <p class="copyright">&#169; All Rights Reserved 2021, Nature Quebec</p>
+            <p class="copyright">Top banner photo by <a class="copyright-link" href="https://unsplash.com/@kazuend?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">kazuend</a> on <a class="copyright-link" href="https://unsplash.com/s/photos/river?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a></p>
+        </div>
+    </footer>
+    <script>
+        window.onload= function(){
+           loadCarrousel();
+           $('audio').mediaelementplayer({stretching:"auto"});
+
+           initLanguage();
+
+        }
+    </script>
+    <script src="../js/script.js"></script>
+    
+</body>
+</html>

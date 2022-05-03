@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4592bcc5fd.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/styles.css" media="screen">
+    <link rel="stylesheet" href="../css/impression.css" media="print">
+    <title>Nature Québec - Présentation</title>
+</head>
+<body>
+
+    <header id="main-header">
+        <section class="main-content">
+            <div class="row1">
+                <h1 class="cache-ecran">Nature Québec - Découvrez les magnifiques parcs de la ville de Québec</h1>
+                
+                <div class="column25">
+                    <img class="logo-blanc" src="../images/interface/logo-blanc.png" alt="Logo Nature Québec">
+                </div>
+                <div class="header-reseaux column75">
+                    <ul>
+                        <li><a href="http://www.facebook.com/quebecnature" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="http://www.twitter.com/quebecnature" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="http://www.instagram.com/quebecnature" target="_blank"><i class="fab fa-instagram reseaux-icon"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="accroche">
+            
+            <div>
+                <h3>La nature au coeur de la ville!</h3>
+            </div>
+        </section>
+        <section class="nav-bar">
+            <h2 class="cache-ecran">Barre de navigation</h2>
+            <nav id="main-nav" class="nav-bar-link main-content">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="presentation.html">Présentation</a></li>
+                    <li><a href="suggerer-lieu.html">Suggérer un parc</a></li>
+                    <li><a  href="#" id="alt-linguistique" lang="en" title="English version" data-location-id="presentation">English</a></li>
+                </ul>
+            </nav>
+        </section>
+
+    </header>
+
+    <main>
+        <section class="main-content">
+            <h4 class="left-align">Présentation</h4>
+
+            <div class="flex-container">
+                <div class="flex-col1">
+                    <h3 class="left-align presentation-accroche">À la découverte du développement web!</h3>
+                
+                    <ul class="fa-ul presentation-liste">
+                        <li><span class="fa-li"><i class="fas fa-leaf"></i></span>Dans le cadre du cours intitulé <em>Programmation des interfaces web</em> du programme <em>Développement web</em> du <em>Cégep de Saint-Félicien</em>, nous avions eu comme défi de créer un site Internet pour présenter 3 points d’intérêt touristiques que nous pouvions choisir à notre guise, tout en respectant les consignes établies. Le tout avait pour objectif de mettre en pratique les notions acquises lors de nos cours de HTML, de CSS et de Javascript.</li>
+                        
+                        <li><span class="fa-li"><i class="fas fa-leaf"></i></span>Le site se devait d’offrir une page d’accueil et d’être bilingue. De plus, il devait présenter les points d’intérêt sous forme de carrousel, inclure des images, des fichiers audios ainsi qu’un formulaire fonctionnel.</li>
+                        
+                        <li><span class="fa-li"><i class="fas fa-leaf"></i></span>À cet effet, je suis heureuse de vous présenter le présent projet que j’ai nommé <em>Nature Québec</em>. Celui-ci présente trois de mes parcs préférés dans la ville de Québec où j’ai le bonheur d’aller fréquemment me ressourcer. En espérant que vous aurez autant de plaisir à les découvrir, que j’en ai eu à faire ce projet!</li>
+
+                    </ul>
+                </div>
+                <div class="flex-col2">
+                    <figure>
+                    <img class="image-code" src="../images/contenu/computer-code.png" alt="Code informatique">
+                    <figcaption class="credit-photo-other">Crédit photo: <a class="copyright-link" href="https://unsplash.com/@alexacea?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Alexandru Acea</a> sur <a class="copyright-link" href="https://unsplash.com/s/photos/computer-code?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer id="footer-main">
+        <nav id="footer-nav" class="nav-bar-link main-content">
+            <h2 class="cache-ecran">Barre de navigation</h2>
+            <ul>
+                <li><a class="footer-link" href="index.html">Accueil</a></li>
+                <li><a class="footer-link" href="presentation.html">Présentation</a></li>
+                <li><a class="footer-link" href="suggerer-lieu.html">Suggérer un parc</a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+        <img class="logo-sans-bordure" src="../images/interface/logo-blanc-zero.png" alt="Logo Nature Québec">
+        <p class="copyright">&#169; Tous droits réservés 2021, Nature Québec</p>
+        <p class="copyright">Photo de la bannière du haut de page par <a class="copyright-link" href="https://unsplash.com/@kazuend?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">kazuend</a> sur <a class="copyright-link" href="https://unsplash.com/s/photos/river?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a></p>
+        </div>
+    </footer>
+    <script>
+        window.onload= function(){
+           
+            initLanguage();
+            
+        }
+    </script>
+    <script src="../js/script.js"></script>
+    
+</body>
+</html>
